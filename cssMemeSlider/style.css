@@ -103,14 +103,12 @@
 }
 
 .dots__dot:before {
-  --size: 0.3125rem;
-
   position: absolute;
   content: '';
-  top: -(var(--size));
-  right: -(var(--size));
-  left: -(var(--size));
-  bottom: -(var(--size));
+  top: -0.3125rem;
+  right: -0.3125rem;
+  left: -0.3125rem;
+  bottom: -0.3125rem;
 }
 
 #slide1:checked ~ .slides .inner,

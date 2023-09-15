@@ -12,12 +12,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 1rem 1rem 0;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   width: 50rem;
   max-width: 90%;
   text-align: center;
   border: 0.0625rem solid #ccc;
+  border-radius: 0.5rem;
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
 }
 
@@ -150,5 +152,17 @@
 #slide3:checked ~ .dots .dots__dot:nth-child(3):active,
 #slide4:checked ~ .dots .dots__dot:nth-child(4):active {
   border: 0.125rem solid #cf0e0e;
+}
+
+@media only screen and (max-width: 48rem) {
+  .slider {
+    grid-template-areas: 'slides' 'dots' 'phrases';
+    grid-template-columns: 1fr;
+    grid-template-rows: 25rem 0.5fr 1fr;
+  }
+
+  .dots {
+    order: 2;
+  }
 }
 

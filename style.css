@@ -40,7 +40,7 @@
   transition: margin-left 0.5s ease-in-out;
 }
 
-.slides .slide {
+.slide {
   width: 100%;
 }
 
@@ -73,8 +73,10 @@
 }
 
 .dots__dot {
-  width: 0.973rem;
-  height: 0.973rem;
+  --size: 0.973rem;
+
+  width: var(--size);
+  height: var(--size);
   border-radius: 100%;
   background: #ccc;
   margin: 0 0.3rem;
@@ -93,10 +95,12 @@
 }
 
 .insertion {
+  --size: 1.5rem;
+
   display: inline-block;
   transform: translate(-25%, -25%);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: var(--size);
+  height: var(--size);
   background: transparent;
   user-select: none;
 }

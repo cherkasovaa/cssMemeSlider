@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Mem Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="main">
+
+  <div class="slider">
+    <input type="radio" name="slider" class="slider__input" id="slide1" checked>
+    <input type="radio" name="slider" class="slider__input" id="slide2">
+    <input type="radio" name="slider" class="slider__input" id="slide3">
+    <input type="radio" name="slider" class="slider__input" id="slide4">
+    <input type="radio" name="slider" class="slider__input" id="slide5">
+    <input type="radio" name="slider" class="slider__input" id="slide6">
+
+    <div class="slides">
+      <div class="inner">
+        <div class="slide slide-1">
+          <img src="./assets/slide_1.webp" alt="mem 1" class="slide__image">
+        </div>
+        <div class="slide slide-2"><img src="./assets/slide_2.webp" alt="mem 2" class="slide__image"></div>
+        <div class="slide slide-3"><img src="./assets/slide_3.webp" alt="mem 3" class="slide__image"></div>
+        <div class="slide slide-4"><img src="./assets/slide_4.webp" alt="mem 4" class="slide__image"></div>
+        <div class="slide slide-5"><img src="./assets/slide_5.webp" alt="mem 5" class="slide__image"></div>
+        <div class="slide slide-6"><img src="./assets/slide_6.webp" alt="mem 6" class="slide__image"></div>
+      </div>
+    </div>
+
+    <div class="slides-text">
+      <div class="inner">
+        <div class="slide-text">Каждый программист - немного музыкант</div>
+        <div class="slide-text">Танцует</div>
+        <div class="slide-text">Сколько мусора!</div>
+        <div class="slide-text">Сейчас исправим</div>
+        <div class="slide-text">Почему комп так сильно тупит?</div>
+        <div class="slide-text">Бегите, глупцы!</div>
+      </div>
+    </div>
+    <div class="dots">
+      <label for="slide1" class="dots__dot"><span class="insertion"></span></label>
+      <label for="slide2" class="dots__dot"><span class="insertion"></span></label>
+      <label for="slide3" class="dots__dot"><span class="insertion"></span></label>
+      <label for="slide4" class="dots__dot"><span class="insertion"></span></label>
+      <label for="slide5" class="dots__dot"><span class="insertion"></span></label>
+      <label for="slide6" class="dots__dot"><span class="insertion"></span></label>
+    </div>
+  </div>
+
+</body>
+
+</html>

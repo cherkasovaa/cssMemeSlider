@@ -83,6 +83,7 @@
 
   width: var(--size);
   height: var(--size);
+  border: 0.125rem solid transparent;
   border-radius: 100%;
   background: var(--base-color);
   margin: 0 0.3rem;
@@ -145,7 +146,7 @@
 #slide6:checked ~ .dots .dots__dot:nth-child(6) {
   background: transparent;
 
-  border: 0.125rem solid var(--base-color);
+  border-color: var(--base-color);
 }
 
 #slide1:checked ~ .dots .dots__dot:nth-child(1):hover,
@@ -154,7 +155,7 @@
 #slide4:checked ~ .dots .dots__dot:nth-child(4):hover,
 #slide5:checked ~ .dots .dots__dot:nth-child(5):hover,
 #slide6:checked ~ .dots .dots__dot:nth-child(6):hover {
-  border: 0.125rem solid var(--hover-color);
+  border-color: var(--hover-color);
 }
 
 #slide1:checked ~ .dots .dots__dot:nth-child(1):active,
@@ -163,7 +164,7 @@
 #slide4:checked ~ .dots .dots__dot:nth-child(4):active,
 #slide5:checked ~ .dots .dots__dot:nth-child(5):active,
 #slide6:checked ~ .dots .dots__dot:nth-child(6):active {
-  border: 0.125rem solid var(--active-color);
+  border-color: var(--active-color);
 }
 
 @media only screen and (max-width: 768px) {

@@ -4,18 +4,20 @@
   box-sizing: border-box;
 }
 
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .slider {
   display: grid;
   grid-template-areas: 'slides slides' 'phrases dots';
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 17fr 1fr;
   gap: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
   padding-bottom: 1rem;
-  transform: translate(-50%, -50%);
   max-width: min(80%, 35rem);
   text-align: center;
   border: 0.0625rem solid #ccc;
@@ -111,10 +113,7 @@
 
 .insertion {
   display: inline-block;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-25%, -25%);
   width: 1.5rem;
   height: 1.5rem;
   background: transparent;

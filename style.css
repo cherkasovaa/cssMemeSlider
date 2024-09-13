@@ -1,3 +1,9 @@
+:root {
+  --base-color: #ccc;
+  --hover-color: #353535;
+  --active-color: #cf0e0e;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +26,7 @@
   padding-bottom: 1rem;
   max-width: 80%;
   text-align: center;
-  border: 0.0625rem solid #ccc;
+  border: 0.0625rem solid var(--base-color);
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
 }
 
@@ -78,7 +84,7 @@
   width: var(--size);
   height: var(--size);
   border-radius: 100%;
-  background: #ccc;
+  background: var(--base-color);
   margin: 0 0.3rem;
   cursor: pointer;
   text-decoration: none;
@@ -87,11 +93,11 @@
 }
 
 .dots__dot:hover {
-  background: #353535;
+  background: var(--hover-color);
 }
 
 .dots__dot:active {
-  background-color: #cf0e0e;
+  background-color: var(--active-color);
 }
 
 .insertion {
@@ -139,7 +145,7 @@
 #slide6:checked ~ .dots .dots__dot:nth-child(6) {
   background: transparent;
 
-  border: 0.125rem solid #ccc;
+  border: 0.125rem solid var(--base-color);
 }
 
 #slide1:checked ~ .dots .dots__dot:nth-child(1):hover,
@@ -148,7 +154,7 @@
 #slide4:checked ~ .dots .dots__dot:nth-child(4):hover,
 #slide5:checked ~ .dots .dots__dot:nth-child(5):hover,
 #slide6:checked ~ .dots .dots__dot:nth-child(6):hover {
-  border: 0.125rem solid #353535;
+  border: 0.125rem solid var(--hover-color);
 }
 
 #slide1:checked ~ .dots .dots__dot:nth-child(1):active,
@@ -157,7 +163,7 @@
 #slide4:checked ~ .dots .dots__dot:nth-child(4):active,
 #slide5:checked ~ .dots .dots__dot:nth-child(5):active,
 #slide6:checked ~ .dots .dots__dot:nth-child(6):active {
-  border: 0.125rem solid #cf0e0e;
+  border: 0.125rem solid var(--active-color);
 }
 
 @media only screen and (max-width: 768px) {

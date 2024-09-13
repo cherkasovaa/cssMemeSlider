@@ -15,10 +15,10 @@
   display: grid;
   grid-template-areas: 'slides slides' 'phrases dots';
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 17fr 1fr;
+  grid-template-rows: auto 1fr;
   gap: 1rem;
   padding-bottom: 1rem;
-  max-width: min(80%, 35rem);
+  max-width: 80%;
   text-align: center;
   border: 0.0625rem solid #ccc;
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
@@ -34,18 +34,18 @@
 }
 
 .inner {
-  transition: margin-left 0.5s ease-in-out;
+  display: flex;
   width: 600%;
   height: 100%;
-  display: flex;
+  transition: margin-left 0.5s ease-in-out;
 }
 
 .slides .slide {
   width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+}
+
+.slide__image {
+  width: 100%;
 }
 
 .slides-text {
@@ -65,30 +65,11 @@
   align-items: start;
 }
 
-.slide-1 {
-  background: url('./assets/slide_1.webp');
-}
-.slide-2 {
-  background: url('./assets/slide_2.webp');
-}
-.slide-3 {
-  background: url('./assets/slide_3.webp');
-}
-.slide-4 {
-  background: url('./assets/slide_4.webp');
-}
-.slide-5 {
-  background: url('./assets/slide_5.webp');
-}
-.slide-6 {
-  background: url('./assets/slide_6.webp');
-}
-
 .dots {
+  grid-area: dots;
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: dots;
 }
 
 .dots__dot {
@@ -179,7 +160,7 @@
   .slider {
     grid-template-areas: 'slides' 'dots' 'phrases';
     grid-template-columns: 1fr;
-    grid-template-rows: 17fr 0.5fr 1fr;
+    grid-template-rows: auto 0.5fr 1fr;
   }
 
   .dots {
